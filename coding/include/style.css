@@ -1,0 +1,834 @@
+﻿body
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.font11blues
+{
+  font-family: Verdana, Arial, Century Gothic, Tahoma;
+  font-size: 11px;
+  color : #005180;
+  font-weight: bold;
+  height : 12px;
+}
+
+
+.font10
+ {
+	font-family: Tahoma;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color : White;
+}
+.font10normal
+ {
+	font-family: Tahoma;
+	font-size: 10px;
+	font-style: normal;
+	color : White;
+}
+
+.TitleWhite
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold; 
+	color : White;
+	line-height : 17px;
+}
+
+
+.font10black
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color : #005180;
+	line-height : 17px;
+}
+
+.font12Bold
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold; 
+	color : #005180;
+	line-height : 17px;
+}
+
+
+.invoiceTitle
+{
+	font-family: arial;
+	font-size: 22px;
+	font-style: normal;
+	color : black; 
+}
+
+.invoiceTitle2
+{
+	font-family: Tahoma;
+	font-size: 15px;
+	font-style: normal;
+	color : #005180;
+	line-height : 17px;
+}
+
+
+
+.font12black
+{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-style: normal;
+	color : #005180;
+	line-height : 17px;
+}
+
+.font10Red
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color : #F00;
+	line-height : 17px;
+}
+
+
+.font10blackbold
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color : #005180;
+	line-height : 17px;
+	font-weight:bold;
+}
+
+.odd
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color : #ffffff;
+	line-height : 17px;
+	background-color: #859bd4;
+}
+
+.Small_odd
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	font-style: normal;
+	color : #ffffff;
+	line-height : 17px;
+	background-color: #005180;
+}
+
+.even
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color : #005180;
+	line-height : 17px;
+	background-color: #FFFFFF;
+}
+
+.Small_even
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	font-style: normal;
+	color : #005180;
+	line-height : 17px;
+	background-color: #FFFFFF;
+}
+
+.SubTotal_even
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	font-style: normal;
+	color : black;
+	line-height : 17px;
+	background-color: #FFCC33;
+}
+
+.font11bluebold
+{
+  font-family: Tahoma;
+  font-size: 11px;
+  color : #0191db;
+  font-weight: bold;
+  height : 12px;
+}
+
+
+
+.tableheader
+{
+  font-family: Tahoma;
+  font-size: 11px;
+  font-style: normal;
+  color : #336699;
+  font-weight: bold;
+  background-color:#92C0EE;
+}
+
+.tableheader1
+{
+  font-family: Tahoma;
+  font-size: 13px;
+  font-style: normal;
+  color : #ffffff;
+  font-weight: bold;
+  background-color:#005180;
+}
+.font10bluebold
+{
+  font-family: Tahoma;
+  font-size: 11px;
+  font-style: normal;
+  color : #0191db;
+  font-weight: bold;
+}
+
+.font10blue
+{
+  font-family: Tahoma;
+  font-size: 10px;
+  font-style: normal;
+  color : #0191db;
+}
+
+.fontblueheader13
+{
+	font-family: Tahoma;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color : #005180;
+}
+
+.fontblueheader20
+{
+	font-family: Georgia, Arial Narrow;
+	font-size: 20px;
+	font-style: normal;
+	color : #005180;
+}
+
+
+.fontwhiteheader13
+{
+	font-family: Tahoma;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	color : #FFFFFF;
+	
+}
+
+.fontwhiteheader12
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color : #FFFFFF;
+	
+}
+
+.fontwhite
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	font-style: normal;
+	color : #005180;
+	
+}
+
+.fontwhitebold
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color : #FFFFFF;
+	
+}
+
+.fontblueheader
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color : #0191db;
+}
+.fontred
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color : #FF0000;
+}
+.font11
+ {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color : White;
+}
+a.fontwhite{ font-family: Tahoma;font-size: 10px;font-style: normal;color: #005180; text-decoration:none;}
+a.fontwhite:link { font-family: Tahoma;font-size: 10px;font-style: normal;color: #005180;}
+a.fontwhite:active {font-family: Tahoma;font-size: 10px;font-style: normal;color: #005180;}
+a.fontwhite:hover {font-family: Tahoma;font-size: 10px;font-style: normal;color: #b1c0e8;text-decoration:none;}
+
+a.faq{ font-family:  Tahoma;font-size: 11px;font-style: normal;color: #336699; text-decoration:none;}
+a.faq:link { font-family: Tahoma;font-size: 11px;font-style: normal;color: #336699;}
+a.faq:active {font-family: Tahoma;font-size: 11px;font-style: normal;color: #336699;}
+a.faq:hover {font-family: Tahoma;font-size: 11px;font-style: normal;color: #336699;text-decoration:none;}
+
+a.faq1{ font-family: Tahoma;font-size: 12px;font-style:bold;font-weight: bold;color: #336699; text-decoration:none;}
+a.faq1:link { font-family: Tahoma;font-size: 12px;font-style:bold;font-weight: bold;color: #336699;}
+a.faq1:active {font-family: Tahoma;font-size: 12px;font-style:bold;font-weight: bold;color: #336699;}
+a.faq1:hover {font-family: Tahoma;font-size: 12px;font-style:bold;font-weight: bold;color: #336699;text-decoration:none;}
+
+a.fontwhitebold{ font-family: Tahoma;font-weight: bold;font-size: 10px;font-style: normal;color: #FFFFFF; text-decoration:none;}
+a.fontwhitebold:link { font-family: Tahoma;font-weight: bold;font-size: 10px;font-style: normal;color: #FFFFFF;}
+a.fontwhitebold:active {font-family: Tahoma;font-weight: bold;font-size: 10px;font-style: normal;color:#FFFFFF;}
+a.fontwhitebold:hover {font-family: Tahoma;font-weight: bold;font-size: 10px;font-style: normal;color: #ffe400; text-decoration:none;}
+
+a.head{ font-family: Tahoma;font-size: 11px;font-style: normal;color: #000000; text-decoration:none;}
+a.head:link { font-family: Tahoma;font-size: 11px;font-style: normal;color: #000000;}
+a.head:active {font-family: Tahoma;font-size: 11px;font-style: normal;color:#000000;}
+a.head:hover {font-family: Tahoma;font-size: 11px;font-style: normal;color: #336699;}
+
+
+input.thin{
+	border : 1px solid #005180;
+	
+	height : 15px;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+select.thin{
+	border : 1px solid #005180; 
+	height : 25;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+
+input.thin2{
+	border : 1px solid #005180;
+	
+	height : 18px;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+.thinDOMR{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:35px;
+}
+
+.thinDOMR2{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:20px;
+}
+
+.thinDOMR3{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:30px;
+}
+
+.thinDOMR4{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:1px;
+}
+
+.thinDOMR5{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:6px;
+}
+
+.thinDOMR6{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:47px;
+}
+
+.thinDOMR7{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:80px;
+}
+
+.thinDOMR8{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:50px;
+}
+
+.thinDOMR9{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:40px;
+}
+
+.thinDOMR10{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:55px;
+}
+
+.thinDOMR11{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:75px;
+}
+
+.thinDOMR12{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-right:65px;
+}
+
+.thinDOML{
+	border : 1px solid #005180;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin-left:-45px;
+	margin-right:35px;
+}
+
+
+
+textarea{
+	border : 1px solid #90a0a9;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+select.box{
+	height : 15px;
+	font-family: Tahoma;
+	font-size: 10px;
+	border : thin solid #90a0a9;
+}
+
+input.button{
+	border : 1px #859bd4;
+	border-style: solid;
+	font-family: Tahoma;
+	font-size: 10px;
+	color:#ffffff;
+	background-color: #005180;		
+}
+
+input.buttonlogin{
+	border : 1px #859bd4;
+	border-style: solid;
+	font-family: Tahoma;
+	font-size: 12px;
+	color:#ffffff;
+	background-color: #005180;
+}
+
+
+.btn{
+	border : 1px #859bd4;
+	border-style: solid;
+	font-family: Tahoma;
+	font-size: 10px;
+	color:#ffffff;
+	background-color: #005180;
+	
+}
+input.button1{
+	border: 1px #90a0a9;
+	border-style: solid;
+	font-family: Tahoma;
+	font-size: 10px;
+	color:grey;
+	background-color: #c5deeb;
+	
+}
+
+input.button2{
+	border : 1px #90a0a9;
+	border-style: solid;
+	font-family: Tahoma;
+	font-size: 10px;
+	color:grey;
+	background-color: #c5deeb;
+	
+}
+td.head{
+	font-family: Tahoma;
+	font-size: 10px;
+	color:white;
+	background-color : #99ccff;
+	vertical-align:middle;
+	
+}
+
+td.head16{
+	font-family: Tahoma;
+	font-size: 16px;
+	color:white;
+	background-color : #778892;
+	font-weight: bold;
+	
+}
+
+td.headup{
+	font-family:  Tahoma;
+	font-size: 12px;
+	color:white;
+	background-color : #6699cc;
+	font-weight: bold;
+	vertical-align:middle;
+	
+}
+
+.smmf
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color : black;
+	line-height : 17px;
+	background-color: #FDE1D5;
+}
+
+TABLE.1{
+border-left:1px;
+border-right:1px;
+border-top:1px;
+border-bottom:1px;
+border:1px solid #90a0a9;
+}
+
+.contentLink{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+}
+
+.contentLink a{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+}
+
+.contentLink a:hover{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #859bd4;
+	text-decoration:underline;
+}
+
+.contentLinkDOM{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+	margin-right:341px;
+}
+
+.contentLinkDOM a{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+	margin-right:340px;
+}
+
+.contentLinkDOM a:hover{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #859bd4;
+	text-decoration:underline;
+	margin-right:340px;
+}
+
+.contentLinkDOM2{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+	margin-right:380px;
+}
+
+.contentLinkDOM2 a{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+	margin-right:380px;
+}
+
+.contentLinkDOM2 a:hover{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #859bd4;
+	text-decoration:underline;
+	margin-right:380px;
+}
+
+.contentLinkDOM3{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+	margin-right:405px;
+}
+
+.contentLinkDOM3 a{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+	margin-right:405px;
+}
+
+.contentLinkDOM3 a:hover{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #859bd4;
+	text-decoration:underline;
+	margin-right:405px;
+}
+
+.contentLinkDOM4{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+	margin-right:385px;
+}
+
+.contentLinkDOM4 a{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+	margin-right:385px;
+}
+
+.contentLinkDOM4 a:hover{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #859bd4;
+	text-decoration:underline;
+	margin-right:385px;
+}
+
+.contentTxt{
+	font-family: Tahoma;
+	font-size: 11px;
+	color : #005180;
+	text-decoration:none;
+}
+
+.contentTxtTitle{
+	font-family: Tahoma;
+	font-size: 12px;
+	color : #005180;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.bgrTop{
+	background-image:url(../images/top.gif);
+	background-repeat:no-repeat;
+	width:1024px;
+	height:75px;
+}
+
+.bgrMainTop{
+	background-image:url(../images/bgrTop.gif);
+	background-repeat:repeat-x;
+}
+
+
+.widthField{
+	width:90px;
+}
+
+.widthField1{
+	width:380px;
+}
+.widthField2{
+	width:150px;
+}
+.widthField3{
+	width:90px;
+}
+.widthField4{
+	width:100px;
+}
+.widthField5{
+	width:90px;
+}
+.widthField6{
+	width:90px;
+}
+
+.borderField1{
+	border:none;
+	font-family:Tahoma;
+	font-size:10px;
+	width:360px;
+	color:#005180;
+}
+
+.borderField2{
+	border:none;
+	font-family:Tahoma;
+	font-size:10px;
+	width:150px;
+	color:#005180;
+}
+
+.borderField3{
+	border:none;
+	font-family:Tahoma;
+	font-size:10px;
+	width:90px;
+	color:#005180;
+}
+
+.borderField4{
+	border:none;
+	font-family:Tahoma;
+	font-size:10px;
+	width:100px;
+	color:#005180;
+}
+
+.borderField5{
+	border:none;
+	font-family:Tahoma;
+	font-size:10px;
+	width:90px;
+	color:#005180;
+}
+
+.borderField6{
+	border:none;
+	font-family:Tahoma;
+	font-size:10px;
+	width:90px;
+	color:#005180;
+}
+
+.fontwhiteheader11Bold
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;  
+	font-weight: bold;
+	color : #FFFFFF;
+	background-image:url(../images/bgtable.gif);
+	background-repeat:repeat-x;
+	
+}
+
+.contentTitleTable
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;  
+	font-weight: bold;
+	color : #FFFFFF;
+	
+	background-color: #005180;
+	background-repeat:repeat-x;
+	
+}
+
+.contentTitle
+{
+  font-family: Verdana, Arial, Century Gothic, Tahoma;
+  font-size: 12px;
+  color : #005180;
+  font-weight: bold;
+  height : 12px;
+}
+
+.headerTableNota
+{
+	font-family: arial;
+	font-size: 15px;
+	font-style: normal;  
+	font-weight: bold;
+	color : black; 	
+}
+
+.font12blackNota
+{
+	font-family: arial;
+	font-size: 14px;
+	font-style: normal;
+	color : black; 
+}
+
+.font10blackNota
+{
+	font-family: arial;
+	font-size: 12px;
+	font-style: normal;
+	color : black; 
+}
+
+.notaCompany
+{
+	font-family: Tahoma;
+	font-size: 18px;
+	font-style: normal;
+	color : #000;
+	line-height : 17px;
+}
+
+.notaTitle
+{
+	font-family: Tahoma;
+	font-size: 15px;
+	font-style: normal;
+	color : #000;
+	line-height : 17px;
+}
+
+.break { page-break-before: always; }

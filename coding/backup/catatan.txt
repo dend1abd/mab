@@ -1,0 +1,6 @@
+- edit sales, kode wilayah di faktur bisa edit/pilih : done
+- edit return pilih faktur gak muncul : done
+- sales faktur oto dari order : done
+- status faktur : - input baru, cetak = siap kirim (1), 
+                  - save input tagihan = sudah kirim (2)
+- Lap buku besar tambah kolom kode acc, no reff : done. tp teu apal isina                  
