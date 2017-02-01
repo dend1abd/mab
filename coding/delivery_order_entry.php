@@ -654,7 +654,7 @@ function getOrderData() {
                   
 				<?php
 				}
-                  if ($_SESSION["op"] == "2" || $_SESSION["op"] == "4"){
+                if ($_SESSION["op"] == "2" || $_SESSION["op"] == "4"){
 					echo "<input class='button' type='button' name='btCetak' id='btCetak' value='Cetak' onClick=\"frmCetakSJ('" .$_SESSION["ID"]. "')\" />&nbsp;&nbsp;&nbsp;";
 				}
 				
