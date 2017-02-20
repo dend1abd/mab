@@ -12,13 +12,19 @@
 	
 	
 	$oDB = new clsDataAccess($hostDB, $userDB, $passDB, $nameDB);	 
+	$limitRecord = 75;
 	
-	if (isset($_POST["txtTgl1"])){
+	if (isset($_POST["txtTgl1"])){		
+		
 		$tgl1 = trim($_POST["txtTgl1"]);
 		$tgl2 = trim($_POST["txtTgl2"]);
 		$customer = trim($_POST["txtCustomer"]);
 		$divisi = trim($_POST["txtDivisi"]);
 		$tagihan = trim($_POST["txttagihan"]);
+		$halaman = trim($_POST["txthalaman"]);
+		
+		if ($halaman == "") $halaman = 1;		
+		$posisi = ($halaman-1) * $limitRecord;
 		
 		$aksi = trim($_POST["txtaksi"]);
 		$jml = trim($_POST["txtjml"]);
@@ -47,6 +53,9 @@
 		$customer = "";
 		$divisi = "";
 		$tagihan = "";
+		
+		$posisi = 0;
+		$halaman = 1;
 	}	
 	
 	$sqlCmd = "SELECT contact_code, CONCAT(contact_name,', ', left(ifnull(alamat,''), 50)) FROM mst_contact where contact_tipe = 3 order by contact_name";
@@ -98,8 +107,16 @@ where a.transaksi_tipe in (6, 7) ";
 	else
 		$sql = $sql . " and (a.transaksi_tgl >= '$tgl1' and a.transaksi_tgl <= '$tgl2' ) ";	
 	
-	$sql = $sql . " order by a.kode_divisi, a.transaksi_kode ";
+	$sql2 = $sql . " order by a.kode_divisi, a.transaksi_kode ";
 	
+	$limitRecord = 75;
+	$sql = $sql2 . " limit $posisi, " . $limitRecord;
+	
+	$rs = $oDB->ExecuteReader($sql);
+	$numRows = mysql_num_rows($rs);
+	
+	$rs2 = $oDB->ExecuteReader($sql2);	
+	$jmlHalaman = ceil(mysql_num_rows($rs2) / $limitRecord); 
 	//eror($sql); 
 ?>
 
@@ -129,6 +146,11 @@ if (isset($rsTagihan)){
 	}
 }
 ?> 
+
+function frmGoToPage(pageno){  
+	document.getElementById("txthalaman").value = pageno;
+	frmCari();
+}
 
 function frmCari(){  
 	document.getElementById("txtaksi").value = 0;
@@ -191,7 +213,7 @@ jQuery(document).ready(function($){
 <body onLoad="errMsg();">
 
 <form method="post" name="frmList">
-<table width="100%" border="0" cellpadding="2" cellspacing="1">
+<table width="100%" border="0" cellp="2" cellspacing="1">
 	<tr class="font12Bold">
 		<td><?php echo $pageTitle; ?></td>
 	</tr>   
@@ -228,6 +250,7 @@ jQuery(document).ready(function($){
 					<td>
 					<?php  
 					echo getTextBox(1, "txttagihan", $tagihan, 30, 30, "");
+					echo getHiddenBox(1, "txthalaman", $halaman)
 					?> 
 					</td>
 				</tr>
@@ -244,6 +267,24 @@ jQuery(document).ready(function($){
 		
 		</td>
 	</tr>
+	
+	<tr>
+		<td>  
+		<?php 
+			if ($jmlHalaman > 1)
+				echo "Page :";
+			for($i=1; $i<$jmlHalaman; $i++){
+				if($i != $halaman){
+					echo "<a href=# onClick='frmGoToPage($i)'>$i</a> | ";
+				}
+				else{
+					echo "<b>$i</b> | ";
+				}
+			}
+		?>
+		</td>
+	</tr>
+	
 	
 	<tr>
 		<td>		
@@ -266,19 +307,21 @@ jQuery(document).ready(function($){
 	echo "<td>No Pembayaran</td>";
 	echo "<td>Update Status</td>";	
 	echo "<td>Ket</td>";
-	echo "</tr>";
+	echo "</tr>";	
 	
-	$rs = $oDB->ExecuteReader($sql);
-	$numRows = mysql_num_rows($rs);
 	$i = 0;
 	if ($numRows == 0){
 		$colspan = 13;
 		echo "<tr class='font10black' bgcolor='#ffffff' align='center'><td colspan=\"$colspan\">Data tidak ada</td></tr>";
 	}
 	else{		
+		
+		$i = 0;
 		while ($data = mysql_fetch_array($rs)) 
 		{
 			$i++;
+			$nourut = $posisi + $i;
+			
 			$jml_invoice = $data["jml_invoice"];
 			$telah_bayar = $data["telah_bayar"];
 			$jml_hutang = $data["piutang"];
@@ -296,7 +339,7 @@ jQuery(document).ready(function($){
 			} 
 									
 									
-			echo "<tr class='font10black' bgcolor='#ffffff' align='center'><td>$i</td>";
+			echo "<tr class='font10black' bgcolor='#ffffff' align='center'><td>$nourut</td>";
 				
 			echo "<td align='center'>" .$data["no_invoice"]. "</td>";
 			
