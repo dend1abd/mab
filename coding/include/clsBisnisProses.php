@@ -208,11 +208,11 @@ define('aksiLihatEnript', encrypt("4"));
  		$lDB = new clsDataAccess($hostDB, $userDB, $passDB, $nameDB); 
 		$fieldName = "";
 		if ($divisi == "M") $fieldName = "mab_urut";
-		if ($divisi == "F") $fieldName = "maf_urut";
+		if ($divisi == "S") $fieldName = "maf_urut";
 		if ($divisi == "T") $fieldName = "mat_urut";
 		//eror($tipeTransaksi);
 		$sql = "select prefiks, $fieldName  + 1 from mst_runno where urutan = $tipeTransaksi";
-		
+		//eror($sql);
 		$rs = $lDB->ExecuteReader($sql);
 		$r	=	mysql_fetch_array($rs);	
 		$Postfix 	= $r[0];
@@ -228,7 +228,7 @@ define('aksiLihatEnript', encrypt("4"));
 		
 		$fieldName = "";
 		if ($divisi == "M") $fieldName = "mab_urut";
-		if ($divisi == "F") $fieldName = "maf_urut";
+		if ($divisi == "S") $fieldName = "maf_urut";
 		if ($divisi == "T") $fieldName = "mat_urut";
 		
 		$sql = "update mst_runno set $fieldName = $fieldName + 1 where urutan = $tipeTransaksi";		

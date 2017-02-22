@@ -147,10 +147,10 @@
 
 function FormProcess()
 {	
-	global $oDB; 
+	global $oDB; 	
 	
 	//$jmlItem = $_POST["txtJmlItem"];
-		//eror($jmlItem);
+	//eror($jmlItem);
 
 	
     if($_SESSION["op"] == "1" || $_SESSION["op"] == "2")
