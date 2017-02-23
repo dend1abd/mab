@@ -9,7 +9,6 @@
 	$kode = retrieveS($_GET["kode"]);
 	$pageTitle = "FAKTUR PENJUALAN"; 
 	
-	//benerkeun disini
 	if ($_SESSION["transaksi_tipe"] == "6")
 		$sql = "update trx_master set stfaktur=0 where transaksi_kode='$kode'";
 	else
